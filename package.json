@@ -1,0 +1,35 @@
+{
+  "name": "@averay/scroll-effects",
+  "description": "Utilities to manage common browser scroll effects.",
+  "author": {
+    "name": "Adam Averay",
+    "url": "https://adamaveray.au"
+  },
+  "license": "MIT",
+  "version": "1.0.0",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./index.ts",
+    "./entrances": "./lib/entrances.ts",
+    "./parallax": "./lib/parallax.ts"
+  },
+  "scripts": {
+    "format": "bun x codeformat fix",
+    "lint": "bun run lint:codeformat && bun run lint:typescript",
+    "lint:codeformat": "bun x codeformat check",
+    "lint:typescript": "bun --bun x tsc --noEmit",
+    "release": "bun --bun x bumpp && bun publish --access public",
+    "prepare": "bun --bun x husky"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@averay/codeformat": "^0.2.6",
+    "@types/bun": "latest",
+    "@types/lodash": "^4.17.20",
+    "bumpp": "^10.2.0",
+    "husky": "^9.1.7"
+  }
+}
