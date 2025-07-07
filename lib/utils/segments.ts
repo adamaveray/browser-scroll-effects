@@ -91,7 +91,9 @@ export function wrapSegments<TWrapper extends Element>(
       // Prepend new processed nodes
       for (const newNode of wrapNodeWords(segmenter, combineSegments, node, wrapperTemplate)) {
         node.before(newNode);
-        segments.push(newNode as TWrapper);
+        if (newNode instanceof Element) {
+          segments.push(newNode as TWrapper);
+        }
       }
       // Remove unprocessed node
       node.remove();
