@@ -1,6 +1,14 @@
 {
   "name": "@averay/scroll-effects",
   "description": "Utilities to manage common browser scroll effects.",
+  "homepage": "https://codeberg.org/adamaveray/browser-scroll-effects",
+  "bugs": {
+    "url": "https://codeberg.org/adamaveray/browser-scroll-effects/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://codeberg.org/adamaveray/browser-scroll-effects.git"
+  },
   "author": {
     "name": "Adam Averay",
     "url": "https://adamaveray.au"
