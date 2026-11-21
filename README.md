@@ -1,3 +1,7 @@
+**This repository has been migrated to Codeberg: [codeberg.org/adamaveray/browser-scroll-effects](https://codeberg.org/adamaveray/browser-scroll-effects)**
+
+---
+
 # @averay/scroll-effects
 
 Utilities to manage common scroll-based effects in browsers.
